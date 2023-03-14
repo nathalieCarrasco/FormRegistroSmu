@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Desafio fomulario N.C</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+	<form>
+		<label>Nombre completo:</label>
+		<input type="text" name="nombre" required>
+		<label>Correo electrónico:</label>
+		<input type="email" name="email" required>
+		<label>Contraseña:</label>
+		<input type="password" name="contraseña"  required>
+		<label>Confirmar contraseña:</label>
+		<input type="password" name="confirmar_contraseña" required>
+		<label>País de residencia:</label>
+		<select name="pais">
+			<option value="Mexico">México</option>
+			<option value="Argentina">Argentina</option>
+			<option value="Colombia">Colombia</option>
+			<option value="España">España</option>
+            <option value="Chile">Chile</option>
+			<option value="Ecuador">Ecuador</option>
+		</select>
+
+        <label for="dia-nac">Fecha de nacimiento:</label>
+        <input type="date" name="dia-nac" required>
+		<br><br>
+
+		<div class="genero">
+			<label for="genero">Género:</label>
+			<label for="masculino"><input type="radio" id="masculino" name="genero" value="masculino"> Masculino</label>
+			<label for="femenino"><input type="radio" id="femenino" name="genero" value="femenino"> Femenino</label>
+			<label for="otro"><input type="radio" id="otro" name="genero" value="otro"> Otro</label>
+		</div>
+
+        <label class="checkbox">
+			<input type="checkbox" id="confirmacion" name="confirmacion">
+			<span>Acepto los términos y condiciones del sitio</span>
+		</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
